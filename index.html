@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Estudaí</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css'>
+<link rel="stylesheet" href="css/style_login.css">
+</head>
+<body>
+<body class="login">
+	<div class="container">
+		<div class="login-container-wrapper clearfix">
+			<ul class="switcher clearfix">
+				<li class="first logo active" data-tab="login">					
+						<a>Login</a>			
+				</li>
+				<li class="second logo" data-tab="sign_up">
+						<a>Cadastro</a>	
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="login">
+					<form class="form-horizontal login-form" method="POST" action="verifica.php">
+						<div class="form-group relative">
+							<input class="form-control input-lg" name='login' id="login_username" placeholder="Endereço de Email" required="" type="email"> <i class="fa fa-user"></i>
+						</div>
+						<div class="form-group relative">
+							<input class="form-control input-lg" name='password' id="login_password" placeholder="Senha" required="" type="password"> <i class="fa fa-lock"></i>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-success btn-lg btn-block" type="submit">Login</button>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="stay-sign" type="checkbox">
+              <label for="stay-sign">Quero me manter logado!</label>
+						</div>
+            <hr />
+						<div class="text-center">
+							<label><a href="#">Esqueceu sua senha?</a></label>
+						</div>
+					</form>
+				</div>
+				<div class="tab-pane" id="sign_up">
+					<form class="form-horizontal login-form" method="POST" action="cadastrar.php">
+						<div class="form-group relative">
+							<input class="form-control input-lg"  id="login_username" name='login' placeholder="Endereço de Email" required="" type="email"> <i class="fa fa-user"></i>
+						</div>
+						<div class="form-group relative">
+							<input class="form-control input-lg" id="login_password" name='name' placeholder="Nome de Usuário"  type="text"> <i class="fa fa-lock"></i>
+						</div>
+						<div class="form-group relative">
+							<input class="form-control input-lg" id="login_password"  name='password' placeholder="Senha" required="" type="password"> <i class="fa fa-lock"></i>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-success btn-lg btn-block" type="submit">Cadastrar</button>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="agree-terms" type="checkbox">
+              <label for="agree-terms"> Concordo com os termos!</label>
+						</div>
+						<hr>
+						<div class="text-center">
+							<label><a href="#">Já é um membro?</a></label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="js/script_login.js"></script>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+      </div>
+      <ui class="social_icon">
+        <li><a href="https://www.facebook.com/The-Big-Five-102397069274273" style="color: white;"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/thebigv555/" style="color: white;"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://twitter.com/TheBigFiv" style="color: white;"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/BolsonaroSincero/" style="color: white;"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ui>
+        <p>2022 ⓒ Todos os direitos reservados, The Big Five</p>
+    </footer>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

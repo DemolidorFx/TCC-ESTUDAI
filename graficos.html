@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <meta charset="UTF-8">
+    <style type="text/css">
+		#canvas{
+            width: 30%;
+		}
+	</style>
+</head>
+<body>
+    <div id="inputs">
+        <p>Selecione os valores que deseja adicionar:</p>
+        <input type="number" id='data' value="2" oninput="changeValue(this.value)">
+        <p><button id='addcollum'>Adicionar coluna</button></p>
+
+
+        <p>Selecione o tipo de gráfico que deseja:</p>
+        <button id="pie">Pizza</button>
+        <button id="bar">Colunas</button>
+        <button id="line">Linhas</button>
+    </div>
+    <div id="canvas">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="js/graficos.js"></script>
+</body>
+</html>
